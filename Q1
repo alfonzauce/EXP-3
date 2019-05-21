@@ -1,0 +1,42 @@
+//smalles,largest,sum,ave using array that inputs 10 int//
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int num[10];
+	int i,max,small,smol,big;
+	float sum,ave;
+	
+	for (i=0; i<10; i++)
+	num[i] = 0.0;
+	for (i =0; i<10; i++)
+	cin >> num[i];
+	
+	small=0;
+	for(i =1; i <10; i++)
+		if (num[i] < num[small] )
+		small = i;
+		smol = num[small];
+	cout << " The smallest integer is = " << smol << "\n";
+		
+	
+	max=0;
+	for(i = 1; i<10;i++)
+		if (num[max] < num[i])
+		max = i;
+		big = num[max];
+	cout << " The largest integer is = " << big<<"\n";
+	
+	sum=0;
+	for (i =0; i<10; i++)
+	sum = sum + num[i];
+	ave = sum/10;
+	
+	cout << " The sum is = " << sum << "\n";
+	cout << " The average is = " << ave << "\n";
+	
+	
+	
+	return 0;
+}
