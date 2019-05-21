@@ -1,4 +1,4 @@
-//smalles,largest,sum,ave using array that inputs 10 int//
+//smallest,largest,sum,ave using array that inputs 10 int//
 #include<iostream>
 using namespace std;
 
