@@ -6,6 +6,8 @@ int main()
 {
 	int tempa[7], tempb[7], tempc[7];
 	int i;
+	char prova[3] = "A", provb[3] = "B", provc[3] = "C";
+	
 	{
 	cout << "Temperature for provinces A, B, and C\n";
         for(int i = 0; i < 7; ++i)
@@ -30,5 +32,26 @@ int main()
             cin >> tempc[i];
         }
     }	
+    
+    cout << "\nThe Temperature of Provinces A, B, and C for a Week :\n";
+
+  
+    for(int i = 0; i < 7; i++)
+        {
+            cout << "Province " << prova << ", Day " << i + 1 << " = " << tempa[i] << "\n";
+           
+        }
+        
+    for(int i = 0; i < 7; i++)
+        {
+            cout << "Province " << provb << ", Day " << i + 1 << " = " << tempb[i] << "\n";
+           
+        }
+        
+    for(int i = 0; i < 7; i++)
+        {
+            cout << "Province " << provc << ", Day " << i + 1 << " = " << tempc[i] << "\n";
+           
+        }
 	return 0;
 }
